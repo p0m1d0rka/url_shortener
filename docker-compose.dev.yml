@@ -1,0 +1,10 @@
+version: "3"
+services: 
+    server:
+        build: .
+        ports:
+            - "8000:8000"
+        volumes: 
+            - .:/usr/app/url_shortener
+    redis:
+        image: redis

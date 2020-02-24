@@ -1,0 +1,11 @@
+version: "3"
+services: 
+    server:
+        image: yanochka:0.0.3
+        ports:
+            - "8000:8000"
+        
+    db:
+        image: redis
+        ports: 
+            - "6379:6379" 
